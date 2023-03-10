@@ -17,6 +17,20 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+  
+    <distributionManagement>
+	  <repository>
+		  <id>navas-release</id>
+		  <url>http://44.203.38.150:8081/repository/navas-release/</url>
+		  <layout>default</layout>
+		  <releases>
+			  <enabled>true</enabled>
+			  <updatePolicy>always</updatePolicy>
+			  <checksumPolicy>warn</checksumPolicy>
+			  </releases>
+		  </repository>          
+  </distributionManagement>
+
 
   <dependencies>
     <dependency>
